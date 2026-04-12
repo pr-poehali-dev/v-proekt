@@ -7,6 +7,7 @@ interface HeaderProps {
 
 const navItems = [
   { id: 'home', label: 'Главная' },
+  { id: 'forum', label: 'Форум' },
   { id: 'strategies', label: 'Стратегии' },
   { id: 'news', label: 'Новости' },
   { id: 'chat', label: 'Чат' },
