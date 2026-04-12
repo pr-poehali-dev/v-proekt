@@ -26,8 +26,8 @@ export default function Header({ activeSection, onNav }: HeaderProps) {
               alt="PoSignals"
               className="w-8 h-8 object-contain"
             />
-            <span className="font-bold text-base tracking-tight" style={{ color: 'var(--forum-text)', fontFamily: 'Golos Text, sans-serif' }}>
-              Po<span style={{ color: 'var(--forum-green)' }}>Signals</span>
+            <span className="font-bold text-base tracking-tight" style={{ color: '#ffffff', fontFamily: 'Golos Text, sans-serif' }}>
+              PoSignals
             </span>
           </div>
 
@@ -41,7 +41,7 @@ export default function Header({ activeSection, onNav }: HeaderProps) {
                   activeSection === item.id ? 'active' : ''
                 }`}
                 style={{
-                  color: activeSection === item.id ? 'var(--forum-green)' : 'var(--forum-text-dim)',
+                  color: activeSection === item.id ? '#ffffff' : 'rgba(255,255,255,0.55)',
                   fontFamily: 'Golos Text, sans-serif',
                   fontWeight: activeSection === item.id ? 600 : 400,
                   background: 'transparent',
