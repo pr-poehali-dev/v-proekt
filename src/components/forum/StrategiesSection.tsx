@@ -116,9 +116,9 @@ export default function StrategiesSection() {
               key={f}
               className="px-3 py-1.5 rounded text-xs font-medium transition-all"
               style={{
-                background: i === 0 ? 'var(--forum-green)' : 'var(--forum-surface)',
-                color: i === 0 ? '#000' : 'var(--forum-text-dim)',
-                border: `1px solid ${i === 0 ? 'var(--forum-green)' : 'var(--forum-border)'}`,
+                background: i === 0 ? 'var(--forum-btn-bg)' : 'var(--forum-surface)',
+                color: i === 0 ? 'var(--forum-btn-text)' : 'var(--forum-text-dim)',
+                border: `1px solid ${i === 0 ? 'var(--forum-btn-bg)' : 'var(--forum-border)'}`,
                 cursor: 'pointer',
                 fontFamily: 'Golos Text, sans-serif',
               }}

@@ -55,7 +55,7 @@ export default function HeroSection({ onNav }: HeroProps) {
             <button
               onClick={() => onNav('strategies')}
               className="px-6 py-3 rounded font-semibold text-sm transition-all hover:opacity-90"
-              style={{ background: 'var(--forum-green)', color: '#000', border: 'none', cursor: 'pointer', fontFamily: 'Golos Text, sans-serif' }}
+              style={{ background: 'var(--forum-btn-bg)', color: 'var(--forum-btn-text)', border: 'none', cursor: 'pointer', fontFamily: 'Golos Text, sans-serif' }}
             >
               Смотреть стратегии
             </button>

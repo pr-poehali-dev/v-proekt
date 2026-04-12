@@ -63,8 +63,8 @@ export default function Header({ activeSection, onNav }: HeaderProps) {
             <button
               className="px-4 py-1.5 rounded text-sm font-semibold transition-all"
               style={{
-                background: 'var(--forum-green)',
-                color: '#000',
+                background: 'var(--forum-btn-bg)',
+                color: 'var(--forum-btn-text)',
                 border: 'none',
                 cursor: 'pointer',
                 fontFamily: 'Golos Text, sans-serif',

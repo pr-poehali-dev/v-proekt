@@ -202,9 +202,9 @@ export default function ChatSection() {
                 <button
                   onClick={sendMessage}
                   className="p-2.5 rounded transition-all hover:opacity-90"
-                  style={{ background: 'var(--forum-green)', border: 'none', cursor: 'pointer' }}
+                  style={{ background: 'var(--forum-btn-bg)', border: 'none', cursor: 'pointer' }}
                 >
-                  <Icon name="Send" size={16} style={{ color: '#000' }} />
+                  <Icon name="Send" size={16} style={{ color: 'var(--forum-btn-text)' }} />
                 </button>
               </div>
               <p className="mono text-xs mt-1.5" style={{ color: 'var(--forum-text-muted)' }}>Enter — отправить · Shift+Enter — новая строка</p>

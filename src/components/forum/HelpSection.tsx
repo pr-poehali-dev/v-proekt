@@ -104,7 +104,7 @@ export default function HelpSection() {
               </p>
               <button
                 className="w-full py-2 rounded text-sm font-semibold transition-all"
-                style={{ background: 'var(--forum-green)', color: '#000', border: 'none', cursor: 'pointer', fontFamily: 'Golos Text, sans-serif' }}
+                style={{ background: 'var(--forum-btn-bg)', color: 'var(--forum-btn-text)', border: 'none', cursor: 'pointer', fontFamily: 'Golos Text, sans-serif' }}
               >
                 Написать модератору
               </button>
