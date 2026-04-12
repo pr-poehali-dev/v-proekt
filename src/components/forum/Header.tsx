@@ -21,14 +21,14 @@ export default function Header({ activeSection, onNav }: HeaderProps) {
         <div className="flex items-center justify-between h-14">
           {/* Logo */}
           <div className="flex items-center gap-3 cursor-pointer" onClick={() => onNav('home')}>
-            <div className="w-8 h-8 rounded flex items-center justify-center" style={{ background: 'var(--forum-green)' }}>
-              <span className="mono text-sm font-bold text-black">T</span>
-            </div>
-            <div>
-              <span className="font-bold text-base tracking-tight" style={{ color: 'var(--forum-text)', fontFamily: 'Golos Text, sans-serif' }}>
-                Trade<span style={{ color: 'var(--forum-green)' }}>Hub</span>
-              </span>
-            </div>
+            <img
+              src="https://cdn.poehali.dev/projects/c2b196b7-640c-4524-9c82-0110102d2ff2/bucket/1661e9e5-49c1-4883-b311-cd46bfda0654.png"
+              alt="PoSignals"
+              className="w-8 h-8 object-contain"
+            />
+            <span className="font-bold text-base tracking-tight" style={{ color: 'var(--forum-text)', fontFamily: 'Golos Text, sans-serif' }}>
+              Po<span style={{ color: 'var(--forum-green)' }}>Signals</span>
+            </span>
           </div>
 
           {/* Nav */}
