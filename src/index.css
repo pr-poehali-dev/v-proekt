@@ -34,17 +34,17 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
 
     /* Forum custom vars */
-    --forum-bg: #0a0c0f;
-    --forum-surface: #111418;
-    --forum-surface-2: #181c22;
-    --forum-border: #1e2530;
-    --forum-green: #00d084;
-    --forum-green-dim: #00a86b;
+    --forum-bg: #08060f;
+    --forum-surface: #0f0c1a;
+    --forum-surface-2: #160f24;
+    --forum-border: #2a1d40;
+    --forum-green: #a855f7;
+    --forum-green-dim: #7c3aed;
     --forum-red: #ff4757;
     --forum-yellow: #ffa502;
-    --forum-text: #e8ecf0;
-    --forum-text-dim: #6b7a8d;
-    --forum-text-muted: #3d4a5c;
+    --forum-text: #ede8f5;
+    --forum-text-dim: #7a6a9a;
+    --forum-text-muted: #3d2d5c;
   }
 
   .dark {
@@ -191,7 +191,7 @@
 
 /* Glow effect */
 .glow-green {
-  box-shadow: 0 0 20px rgba(0, 208, 132, 0.15);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.15);
 }
 
 .mono {

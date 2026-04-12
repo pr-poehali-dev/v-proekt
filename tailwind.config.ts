@@ -67,17 +67,17 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				forum: {
-					bg: '#0a0c0f',
-					surface: '#111418',
-					surface2: '#181c22',
-					border: '#1e2530',
-					green: '#00d084',
-					'green-dim': '#00a86b',
+					bg: '#08060f',
+					surface: '#0f0c1a',
+					surface2: '#160f24',
+					border: '#2a1d40',
+					green: '#a855f7',
+					'green-dim': '#7c3aed',
 					red: '#ff4757',
 					yellow: '#ffa502',
-					text: '#e8ecf0',
-					'text-dim': '#6b7a8d',
-					'text-muted': '#3d4a5c',
+					text: '#ede8f5',
+					'text-dim': '#7a6a9a',
+					'text-muted': '#3d2d5c',
 				}
 			},
 			borderRadius: {
