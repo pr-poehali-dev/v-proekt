@@ -47,6 +47,7 @@
     --forum-text-muted: #3e3a5c;
     --forum-btn-bg: #ffffff;
     --forum-btn-text: #07070d;
+    --forum-heading: #ffffff;
   }
 
   .dark {
@@ -95,6 +96,14 @@
   color: var(--forum-text);
   font-family: "Golos Text", sans-serif;
   min-height: 100vh;
+}
+
+/* White headings */
+.forum-body h1,
+.forum-body h2,
+.forum-body h3,
+.forum-body h4 {
+  color: var(--forum-heading) !important;
 }
 
 /* Scrollbar */
