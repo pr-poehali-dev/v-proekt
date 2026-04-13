@@ -90,20 +90,63 @@
   }
 }
 
+/* ── Light theme overrides ── */
+.forum-body.forum-light {
+  --forum-bg: #f4f2ff;
+  --forum-surface: #ffffff;
+  --forum-surface-2: #ede9ff;
+  --forum-border: #d4ccf5;
+  --forum-green: #7c5fd4;
+  --forum-green-dim: #9b85e0;
+  --forum-red: #d93f52;
+  --forum-yellow: #b87a00;
+  --forum-text: #1a1535;
+  --forum-text-dim: #5a5180;
+  --forum-text-muted: #a098c8;
+  --forum-btn-bg: #7c5fd4;
+  --forum-btn-text: #ffffff;
+  --forum-heading: #1a1535;
+}
+
 /* Forum global styles */
 .forum-body {
   background-color: var(--forum-bg);
   color: var(--forum-text);
   font-family: "Golos Text", sans-serif;
   min-height: 100vh;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
-/* White headings */
+/* Headings color via theme var */
 .forum-body h1,
 .forum-body h2,
 .forum-body h3,
 .forum-body h4 {
   color: var(--forum-heading) !important;
+}
+
+/* Light theme: header surface */
+.forum-body.forum-light header {
+  background: #ffffff !important;
+  border-bottom-color: var(--forum-border) !important;
+}
+.forum-body.forum-light .forum-card:hover {
+  border-color: var(--forum-green);
+}
+.forum-body.forum-light .badge-up {
+  color: var(--forum-green);
+  background: rgba(124, 95, 212, 0.08);
+  border-color: rgba(124, 95, 212, 0.2);
+}
+.forum-body.forum-light .section-divider {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--forum-border),
+    transparent
+  );
 }
 
 /* Scrollbar */

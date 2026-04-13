@@ -22,6 +22,7 @@ type View =
 export default function Index() {
   const [activeSection, setActiveSection] = useState('home');
   const [view, setView] = useState<View>({ type: 'home' });
+  const [theme, setTheme] = useState<'dark' | 'light'>('dark');
 
   const handleNav = (section: string) => {
     setActiveSection(section);
@@ -58,6 +59,10 @@ export default function Index() {
     setView({ type: 'forum-board' });
     setActiveSection('forum');
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleToggleTheme = () => {
+    setTheme((t) => (t === 'dark' ? 'light' : 'dark'));
   };
 
   const renderContent = () => {
@@ -101,9 +106,14 @@ export default function Index() {
   };
 
   return (
-    <div className="forum-body">
+    <div className={`forum-body${theme === 'light' ? ' forum-light' : ''}`}>
       <MarketTicker />
-      <Header activeSection={activeSection} onNav={handleNav} />
+      <Header
+        activeSection={activeSection}
+        onNav={handleNav}
+        theme={theme}
+        onToggleTheme={handleToggleTheme}
+      />
       <main>
         {renderContent()}
       </main>
