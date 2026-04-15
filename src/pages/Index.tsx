@@ -8,6 +8,9 @@ import ChatSection from '@/components/forum/ChatSection';
 import AboutSection from '@/components/forum/AboutSection';
 import HelpSection from '@/components/forum/HelpSection';
 import Footer from '@/components/forum/Footer';
+import FeaturesSection from '@/components/forum/FeaturesSection';
+import AiBuilderSection from '@/components/forum/AiBuilderSection';
+import BuiltInSection from '@/components/forum/BuiltInSection';
 import ForumBoard from '@/components/forum/ForumBoard';
 import ForumCategory from '@/components/forum/ForumCategory';
 import ForumThread from '@/components/forum/ForumThread';
@@ -82,12 +85,9 @@ export default function Index() {
         return (
           <>
             <HeroSection onNav={handleNav} />
-            <div className="section-divider" />
-            <StrategiesSection />
-            <div className="section-divider" />
-            <NewsSection />
-            <div className="section-divider" />
-            <ChatSection />
+            <FeaturesSection />
+            <AiBuilderSection />
+            <BuiltInSection />
           </>
         );
       case 'strategies':
